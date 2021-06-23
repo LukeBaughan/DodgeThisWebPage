@@ -32,6 +32,16 @@
     <!-- Prism -->
     <link href="css/prism.css" rel="stylesheet" />
 
+    <style>
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -48,7 +58,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#description">Gameplay</a>
+                        <a class="nav-link js-scroll-trigger" href="#gameplay">Gameplay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#dev">Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#rooms">Minigames</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact Information</a>
@@ -75,8 +91,8 @@
         </div>
     </header>
 
-    <!-- Summary Section -->
-    <section class="page-section bg-primary" id="description">
+    <!-- Gameplay -->
+    <section class="page-section bg-primary" id="gameplay">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -87,13 +103,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p align="center" class="text-white-50 mb-4 mt-4">
-                            This university project involved having to make use of grids using blueprints in Unreal Engine 4,
-                            so I decided to create a game in which the player must navigate through rooms containing random minigames.<br>
-                            The minigame rooms are placed along a path which is determined by a breadth-first search between a random point on the first and last row of a grid. <br>
-                            The length of the path depends on which difficulty the player selects.
-                            There are four different minigame rooms and if the player can reach the end room, they win.
-                        </p>
+                        <div class="vertical-center">
+
+                            <p align="center" class="text-white-50 mb-4 mt-4">
+                                This university project involved having to make use of grids using blueprints in Unreal Engine 4,
+                                so I decided to create a game in which the player must navigate through rooms containing random minigames.<br>
+                                The minigame rooms are placed along a path which is determined by a breadth-first search between a random point on the first and last row of a grid. <br>
+                                The length of the path depends on which difficulty the player selects.
+                                There are four different minigame rooms and if the player can reach the end room, they win.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
@@ -106,8 +125,8 @@
         </div>
     </section>
 
-    <!-- Summary Section -->
-    <section class="page-section" id="description1">
+    <!-- Development -->
+    <section class="page-section" id="dev">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -115,69 +134,85 @@
                     <hr class="divider my-4">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/DoorsMeshesAded.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vertical-center">
                         <p align="center" class="mb-4 mt-4">
                             Firstly, I set up a grid of nodes and performed a breadth-first-search (BFS) between a random node on the first and last row of the grid. <br />
                             As the BFS adds new nodes to the path, each node is assigned a random minigame (the coloured nodes represent the minigame rooms).
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="img/BFS_Random RoomPath.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/BFS_Random RoomPath.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Summary Section -->
-    <section class="page-section" id="description1">
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/DoorsMeshesAded.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vertical-center">
                         <p align="center" class="mb-4 mt-4">
                             I then made the BFS spawn minigame rooms on each path node and walls on each of the path's neighbour nodes. <br />
                             A start and finish room are spawned on the first and last node in the path.
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="img/DoorsMeshesAdded.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/DoorsMeshesAdded.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Summary Section -->
-    <section class="page-section" id="description1">
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/DoorsMeshesAded.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="vertical-center">
                         <p align="center" class="mb-4 mt-4">
-                            Lastly, I created four minigame rooms and set each path node to spawn a random room. <br />
-                            The length of the path depends on what difficulty the player chooses.
+                            Lastly, I created four different minigame rooms (which all inherit from a base minigame room) and set each path node to spawn a random room at its location. <br />
+                            The number of nodes spawned in the grid changes based on what difficulty the player selects.
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="img/PathFinal.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/PathFinal.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Summary Section -->
-    <section class="page-section bg-primary" id="description">
+    <!-- Minigames -->
+    <section class="page-section bg-primary" id="rooms">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h1 class="text-white mt-0">Room Types</h1>
+                    <h1 class="text-white mt-0">Minigames</h1>
                     <hr class="divider light my-4">
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/DoorsMeshesAded.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center">
@@ -200,23 +235,27 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="page-section bg-primary" id="description">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <h1 class="text-white mt-0">Bar Jump</h1>
-                    <hr class="divider light my-4">
-                </div>
-                <div class="col-lg-6 text-center">
-                    <h1 class="text-white mt-0">Spinner</h1>
-                    <hr class="divider light my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="text-white mt-0"><br />  </h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="text-white mt-0">Bar Jump</h1>
+                        <hr class="divider light my-4">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <h1 class="text-white mt-0">Spinner</h1>
+                        <hr class="divider light my-4">
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -224,7 +263,6 @@
                     </div>
                     <div class="col-lg-6">
                         <img src="img/Spinner.gif" class="img-fluid" alt="Responsive image">
-
                     </div>
                 </div>
             </div>
@@ -248,7 +286,7 @@
                     <a class="d-block" href="https://github.com/LukeBaughan">GitHub Profile</a>
                 </div>
                 <div class="col-lg-6 mr-auto text-center">
-                   <!-- <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>-->
+                    <!-- <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>-->
                 </div>
             </div>
     </section>
