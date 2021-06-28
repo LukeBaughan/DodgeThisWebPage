@@ -26,8 +26,6 @@
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="css/creative.min.css" rel="stylesheet">
 
-    <!-- LinkedIn Profile Badge -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
     <!-- Prism -->
     <link href="css/prism.css" rel="stylesheet" />
@@ -144,7 +142,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vertical-center">
-                        <p align="center" class="mb-4 mt-4">
+                        <p align="left" class="mb-4 mt-4">
                             Firstly, I set up a grid of nodes and performed a breadth-first-search (BFS) between a random node on the first and last row of the grid. <br />
                             As the BFS adds new nodes to the path, each node is assigned a random minigame (the coloured nodes represent the minigame rooms).
                         </p>
@@ -164,9 +162,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vertical-center">
-                        <p align="center" class="mb-4 mt-4">
-                            I then made the BFS spawn minigame rooms on each path node and walls on each of the path's neighbour nodes. <br />
-                            A start and finish room are spawned on the first and last node in the path.
+                        <p align="left" class="mb-4 mt-4">
+                            I then had the grid manager spawn minigame rooms on each path node as well as walls on each of the path's neighbour nodes.<br />
+                            A start room and a finish room is spawned on the first and last node in the path respectively.
+
                         </p>
                     </div>
                 </div>
@@ -184,7 +183,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vertical-center">
-                        <p align="center" class="mb-4 mt-4">
+                        <p align="left" class="mb-4 mt-4">
                             Lastly, I created four different minigame rooms (which all inherit from a base minigame room) and set each path node to spawn a random room at its location. <br />
                             The number of nodes spawned in the grid changes based on what difficulty the player selects.
                         </p>
@@ -282,12 +281,16 @@
             <div class="row">
                 <div class="col-lg-6 mr-auto text-center">
                     <i class="fab fa-github fa-3x mb-3 text-muted"></i>
-                    <!-- Make sure to change the email address in anchor text AND the link below! -->
                     <a class="d-block" href="https://github.com/LukeBaughan">GitHub Profile</a>
                 </div>
                 <div class="col-lg-6 mr-auto text-center">
-                    <!-- <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>-->
+                    <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="https://www.linkedin.com/in/luke-baughan/">LinkedIn Profile</a>
                 </div>
+                <!--<div class="col-lg-6 mr-auto text-center">-->
+                    <!--<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="luke-baughan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/luke-baughan?trk=profile-badge">Luke Baughan</a></div>-->
+                    <!--<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>-->
+                <!--</div>-->
             </div>
     </section>
 
@@ -308,6 +311,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <!-- LinkedIn Profile Badge -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
 
